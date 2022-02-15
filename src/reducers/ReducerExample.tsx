@@ -1,4 +1,4 @@
-// import { useReducer } from 'react';
+import { useReducer } from 'react';
 import { Todo } from '../models/model';
 
 type Actions = 
@@ -26,13 +26,14 @@ export const TodoReducer = (state: Todo[], action: Actions) => {
     };
 };
 
-// const ReducerExample = () => {
-//     const [state, setState] = useReducer(TodoReducer, []);
-//     return (
-//         <div>
-//             Reducer Example
-//         </div>
-//     );
-// };
+// TODO : Implement the project using useReducer
+const ReducerExample = () => {
+    const [state, setState] = useReducer(TodoReducer, []);
+    return (
+        <div>
+            Reducer Example
+        </div>
+    );
+};
 
-// export default ReducerExample;
+export default ReducerExample;
